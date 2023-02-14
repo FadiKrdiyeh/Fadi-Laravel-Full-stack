@@ -1,0 +1,79 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+@import '../components/btn-custom';
+@import '../components/rate';
+@import '../components/pagination';
+
+/***** Start Header *****/
+.navbar-light {
+    .navbar-nav {
+        .nav-link {
+            i {
+                margin-right: 0;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+/***** End Header *****/
+
+
+/***** Start Sidebar *****/
+.offcanvas {
+    .offcanvas-header {
+        .offcanvas-title{
+            padding-left: 0;
+            padding-right: 4rem;
+        }
+        .btn-close {
+            font-size: 30px;
+        }
+    }
+    .offcanvas-body {
+        padding: 1rem 1rem 1rem 0;
+        // padding: 1rem 0 1rem 1rem;
+        .nav-link {
+            padding-left: 0;
+            padding-right: 4rem;
+            i {
+                margin-right: 0;
+                margin-left: 20px;
+            }
+            &:hover {
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+        }
+    }
+}
+/***** End Sidebar *****/
+
+/***** Start Pagination *****/
+.pagination {
+    .page-item {
+        &:first-child {
+            .page-link {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 0.5rem;
+                border-bottom-right-radius: 0.5rem;
+            }
+        }
+        &:last-child {
+            .page-link {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                border-top-left-radius: 0.5rem;
+                border-bottom-left-radius: 0.5rem;
+            }
+        }
+    }
+}
+/***** End Pagination *****/
+
+
+/***** Start  *****/
+
+/***** End  *****/

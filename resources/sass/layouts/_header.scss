@@ -1,0 +1,53 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+// .navbar-en {
+//     // background-color: rgb(36, 36, 36) !important;
+//     background:linear-gradient(to right, $lightColor, #242424 30%) !important;
+// }
+// .navbar-ar {
+//     // background-color: rgb(36, 36, 36) !important;
+//     background:linear-gradient(to left, $lightColor, #242424 30%) !important;
+// }
+.navbar-light {
+    .navbar-nav {
+        .nav-link {
+            // color: #CCC;
+            @include transition(.5s);
+            // &:hover {
+            //     color: #727272
+            // }
+            i {
+                font-size: 24px;
+                margin-right: 5px;
+            }
+            &::before {
+                display: block;
+                position: relative;
+                left: 0;
+                bottom: -30px;
+                width: 0;
+                height: 2px;
+                // background: linear-gradient(to right, #FFF 0%, #333 100%);
+                content: "";
+                transition: width 0.3s
+            }
+            &:hover::before {width: 100%}
+        }
+    }
+    .navbar-brand {
+        font-weight: bold;
+        font-size: 30px;
+    }
+}
+// .dropdown-menu {
+//     background-color: $darkColor;
+// }
+.dropdown-item {
+    // color: $lightColor;
+    @include transition(.3s);
+    // &:hover {
+    //     background-color: $lightColor;
+    //     color: $darkColor;
+    // }
+}

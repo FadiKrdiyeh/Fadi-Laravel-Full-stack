@@ -1,0 +1,34 @@
+.pagination {
+    .page-item {
+        .page-link {
+            font-size: 27px;
+            color: $darkColor;
+            background-color: $lightColor;
+            border: 1px solid #dee2e6;
+            @include transition(.3s);
+            &:hover {
+                color: $lightColor;
+                background-color: $darkColor;
+                border: 1px solid #dee2e6
+            }
+            &:focus {
+                box-shadow: none
+            }
+        }
+        &:first-child {
+            .page-link {
+                border-top-left-radius: 0.5rem;
+                border-bottom-left-radius: 0.5rem
+            }
+        }
+        &:last-child {
+            .page-link {
+                border-top-right-radius: 0.5rem;
+                border-bottom-right-radius: 0.5rem
+            }
+        }
+    }
+    .active {
+        box-shadow: 0 0 20px 10px #000;
+    }
+}

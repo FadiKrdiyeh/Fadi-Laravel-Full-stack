@@ -1,0 +1,54 @@
+@import '../../helpers/variables';
+@import '../../components/rate';
+@import '../../components/btn-custom';
+
+body {
+    margin-bottom: 100px;
+}
+
+.main-title {
+    // color: $darkFontColor;
+    font-size: 46px;
+    font-weight: bold;
+    letter-spacing: 1.9px;
+    // text-shadow: 0 0 10px #EEE
+}
+.admin-title {
+    // color: $darkFontColor;
+    margin-bottom: 50px;
+}
+.dash-card {
+    border-radius: 20px;
+    // background-color: $darkColor;
+    // box-shadow: 5px 5px 25px 2px #000;
+    .dash-card-title {
+        padding: 15px;
+        // border-bottom: 2px solid #111;
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 1.9px;
+        // color: $darkFontColor;
+        // text-shadow: 0 0 10px #EEE;
+        .fa {
+            display: block;
+            // color: rgba(255, 153, 0, 0.426);
+            font-size: 50px;
+            text-shadow: none;
+            margin-top: 10px;
+        }
+    }
+    .dash-card-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        .value {
+            font-size: 35px;
+            // color: $darkFontColor;
+            @include transition(.5s);
+            &:hover {
+                transform: rotate(360deg) scale(1.06);
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+@import '../helpers/mixins';
+@import '../helpers/variables';
+
+.rate-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $darkColor;
+    h2 {
+        margin-bottom: 10px;
+        font-weight: 500;
+        color: rgb(255, 174, 0);
+    }
+    .skills {
+        @include transition(.5s);
+        .rating h3 {
+            min-width: 50px;
+            padding-right: 20px;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+        .rating {
+            position: relative;
+            display: flex;
+            margin: 5px 0;
+            max-width: 50vh;
+            input {
+                position: relative;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                -webkit-appearance: none;
+                appearance: none;
+                overflow: hidden;
+                &::before {
+                    content: '\f005';
+                    position: absolute;
+                    font-family: fontAwesome;
+                    font-size: 34px;
+                    left: 17px;
+                    color: #030B0F;
+                    @include transition(.5s);
+                }
+            }
+        }
+        .rating-ar {
+            flex-direction: row;
+        }
+        .rating-en {
+            flex-direction: row-reverse;
+        }
+    }
+}
+.rate-container .skills .rating input:nth-child(2n+1)::before {
+    right: 17px;
+    left: initial;
+}
+.rate-container .skills .rating input:hover ~ input::before,
+.rate-container .skills .rating input:hover::before,
+.rate-container .skills .rating input:checked ~ input::before,
+.rate-container .skills .rating input:checked::before {
+    /* color: #1F9CFF; */
+    color: rgb(255, 174, 0);
+}
+/****** End Rating Stars ******/

@@ -1,0 +1,489 @@
+@import '../../helpers/variables';
+@import '../../helpers/mixins';
+@import '../../components/btn-custom';
+@import '../../components/rate';
+@import '../../components/pagination';
+
+body {
+    background-color: $darkColor;
+}
+*::selection {
+    background-color: $lightColor;
+    color: $darkColor;
+}
+::-webkit-scrollbar{
+    background-color:#636363d0
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(180deg, $darkColor, $lightColor)
+}
+/***** Start Components *****/
+.btn-custom {
+    background-color: #444;
+    color: #DDD;
+    &:hover {
+        background-color: $lightColor;
+        color: #111;
+    }
+    &:focus {
+        box-shadow: 5px 5px 10px 1px $lightColor;
+        color: $lightColor;
+    }
+}
+/***** End Components *****/
+
+
+/***** Start Includes *****/
+/* Start Header */
+.navbar-en {
+    // background-color: rgb(36, 36, 36) !important;
+    background:linear-gradient(to right, $lightColor, #242424 30%) !important;
+}
+.navbar-ar {
+    // background-color: rgb(36, 36, 36) !important;
+    background:linear-gradient(to left, $lightColor, #242424 30%) !important;
+}
+.navbar-light {
+    .navbar-nav {
+        .nav-link {
+            color: #CCC;
+            &:hover {
+                color: #727272
+            }
+            &::before {
+                background: linear-gradient(to right, #FFF 0%, #333 100%);
+            }
+        }
+    }
+}
+.dropdown-menu {
+    background-color: $darkColor;
+}
+.dropdown-item {
+    color: $lightColor;
+    &:hover {
+        background-color: $lightColor;
+        color: $darkColor;
+    }
+}
+/* End Header */
+
+/* Start Sidebar */
+.offcanvas {
+    background-color: $darkColor;
+    .offcanvas-header {
+        .offcanvas-title{
+            color: #DDD;
+            text-shadow: 0 0 10px #EEE;
+        }
+        .btn-close {
+            color: #DDD !important;
+        }
+    }
+    .offcanvas-body {
+        .nav-link {
+            color: $lightColor;
+            i {
+                color: #DDD;
+            }
+            &:hover {
+                background-color: $lightColor;
+                color: $darkColor;
+            }
+        }
+    }
+}
+.btn-sitting {
+    background-color: $lightColor;
+    border: 2px solid #999;
+}
+/* End Sidebar */
+/***** End Includes *****/
+
+
+/***** Start Home *****/
+.flip-card {
+    .face.back {
+        color: #FFF;
+    }
+    .card {
+        background-color: $darkColor;
+        border-color: #444;
+        box-shadow: 5px 5px 25px 2px #000;
+        .card-header {
+            .hide-details-btn {
+                background-color: rgba(172, 0, 0, 0.672);
+                color: rgb(245, 245, 245);
+                &:hover {
+                    background-color: rgba(172, 0, 0, 0.987);
+                }
+            }
+            .details-t {
+                color: #EEE;
+                text-shadow: 0 0 10px #EEE;
+            }
+        }
+        .card-body {
+            background-color: $darkColor;
+            .card-title {
+                color: rgba(238, 238, 238, 0.85);
+                .title {
+                    text-shadow: 0 0 10px #EEE;
+                }
+            }
+            .show-details-btn {
+                background-color: $lightColor;
+                border: 4px solid #222;
+            }
+            .card-text {
+                .description-t {
+                    color: rgba(238, 238, 238, 0.85);
+                    text-shadow: 0 0 10px #EEE;
+                }
+                .description {
+                    color: rgba(238, 238, 238, 0.563);
+                }
+            }
+        }
+        .card-footer {
+            // background-color: rgb(147, 147, 147);
+            .footer-titles {
+                color: rgba(238, 238, 238, 0.85);
+                text-shadow: 0 0 10px #EEE;
+            }
+        }
+    }
+}
+
+.form-control {
+    background-color: $darkColor;
+    border-bottom: 2px solid $darkFontColor;
+    color: $lightColor;
+    &::placeholder {
+        color: rgba(238, 238, 238, 0.364);
+    }
+    &:focus {
+        box-shadow: 5px 5px 10px 1px $lightColor;
+        background-color: #444;
+        color: $lightColor;
+    }
+}
+
+.modal {
+    .modal-dialog {
+        .modal-content {
+            background-color: $darkColor;
+            .modal-header {
+                border-color: $lightColor;
+                .modal-title {
+                    color: #FFF;
+                }
+                .close {
+                    color: #FFF;
+                }
+            }
+            .modal-body {
+                .rate-container {
+                    .total-ratings {
+                        color: rgb(255, 174, 0);
+                    }
+                    .skills {
+                        .name {
+                            color: $lightColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.total_results {
+    background-color: transparent;
+    color: #EEE;
+    border-color: #FFF;
+    text-shadow: 0 0 10px #EEE;
+}
+.no-data-msg {
+    background-color: transparent;
+    color: #EEE;
+    border-color: #FFF;
+    text-shadow: 0 0 10px #EEE;
+}
+/***** End Home *****/
+
+
+/***** Stat Create Style *****/
+.card {
+    background-color: $darkColor;
+    border-color: #444;
+    .card-header {
+        color: $darkFontColor;
+        text-shadow: 0 0 10px #EEE
+    }
+    .card-body {
+        background-color: $darkColor;
+        .card-title {
+            color: $darkFontColor;
+        }
+        .form-text {
+            color: $darkFontColor;
+        }
+        .form-control {
+            background-color: $darkColor;
+            border-bottom: 2px solid $darkFontColor;
+            color: $lightColor;
+            &::placeholder {
+                color: rgba(238, 238, 238, 0.364);
+            }
+            &:focus {
+                box-shadow: 5px 5px 10px 1px $lightColor;
+                background-color: #444;
+                color: $lightColor;
+            }
+        }
+        .form-check-input {
+            border: 2px solid rgba(196, 196, 196, 0.816);
+            &:checked {
+                box-shadow: 0 0 10px 1px $lightColor;
+                background-color: $darkColor;
+                border-color: #444;
+            }
+        }
+    }
+}
+/***** End Create Style *****/
+
+
+/***** Start Wallet *****/
+.wallet-title {
+    color: $lightColor;
+    text-shadow: 0 0 10px #EEE;
+}
+.title {
+    color: $lightColor;
+}
+/***** End Wallet *****/
+
+
+/***** Start About Website *****/
+.main-title {
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 0 0 10px #EEE;
+}
+.content {
+    .about-website {
+        color: rgba(238, 238, 238, 0.755);
+        background-color: rgba(238, 238, 238, 0.419);
+        border: 2px solid rgba(0, 0, 0, .5);
+        .number {
+            background-color: rgba(200, 255, 0, 0.323);
+            color: #FFF;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.76);
+            filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.96));
+        }
+    }
+}
+/***** End About Website *****/
+
+
+/***** Start Themes *****/
+.theme-title {
+    color: $lightColor;
+    text-shadow: 0 0 10px #EEE;
+}
+.theme-box {
+    border: 3px solid #666;
+    &:not(.active):hover {
+        border-color: rgba(114, 71, 71, 0.597);
+        box-shadow: 0 0 15px 2px #666;
+    }
+}
+.dark-theme {
+    background-color: #2b2b2b;
+}
+.light-theme {
+    background-color: rgb(172, 172, 172);
+}
+.active {
+    border-color: rgb(126, 68, 68);
+    box-shadow: 0 0 15px 5px #666;
+    &::after {
+        color: #FFF;
+        background-color: rgba(0, 103, 182, 0.761);
+    }
+}
+h5 {
+    color: $lightColor;
+}
+/***** End Themes *****/
+
+
+/***** Start About Developer *****/
+.about-title {
+    color: $darkFontColor;
+    text-shadow: 0 0 10px #EEE;
+}
+.info-text {
+    color: $darkFontColor;
+    .name {
+        color: #EEE;
+    }
+    .info-list {
+        color: rgba(238, 238, 238, 0.501);
+        .fa {
+            color: rgba(209, 143, 0, 0.693);
+        }
+    }
+}
+.contact-me {
+    background: linear-gradient(to bottom, $darkColor, #DFF1FF);
+    &::before {
+        background: rgba(255, 255, 255, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    .contact-title {
+        color: $darkFontColor;
+        text-shadow: 0 0 10px #EEE;
+    }
+    .color {
+        &:nth-child(1) {
+            background-color: #FF359B;
+        }
+        &:nth-child(2) {
+            background-color: #FFFD87;
+        }
+        &:nth-child(3) {
+            background-color: #00D2FF;
+        }
+    }
+    .contact-list {
+        li {
+            a {
+                color: #FFF;
+                border: 1px solid rgba(255, 255, 255, 0.4);
+                border-right: 1px solid rgba(255, 255, 255, 0.2);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                background: rgba(255, 255, 255, 0.1);
+                box-shadow: 0 5 px 45px rgba(0, 0, 0, 0.1);
+                &::before {
+                    background: rgba(255, 255, 255, 0.5);
+                }
+            }
+        }
+    }
+}
+/***** End About Developer *****/
+
+
+/***** Start Show Style *****/
+.card {
+    background-color: $darkColor;
+    .card-body {
+        background-color: $darkColor;
+        .card-title {
+            color: rgba(238, 238, 238, 0.85);
+            font-weight: bold;
+            text-shadow: 0 0 10px #EEE
+        }
+        .card-text {
+            color: rgba(238, 238, 238, 0.707) !important;
+        }
+    }
+    .modal {
+        .modal-dialog {
+            .modal-content {
+                background-color: $darkColor;
+                .modal-header {
+                    border-color: $lightColor;
+                    .modal-title {
+                        color: #FFF;
+                    }
+                    .close {
+                        color: #FFF;
+                    }
+                }
+                .modal-body {
+                    .rate-container {
+                        .total-ratings {
+                            color: rgb(255, 174, 0);
+                        }
+                        .skills {
+                            .name {
+                                color: $lightColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.code {
+    h5 {
+        color: #FFF;
+    }
+    .code_container {
+        background-color: rgba(0, 0, 0, 0.748);
+        color: $lightColor;
+        text-shadow: 3px 3px 5px $lightColor;
+    }
+}
+/***** End Show Style *****/
+
+
+/***** Start Media *****/
+@media (max-width: 767px){
+    .navbar-ar {
+        background: $lightColor !important;
+    }
+    .navbar-en {
+        background: $lightColor !important;
+    }
+    .navbar-light {
+        .navbar-nav {
+            .nav-link {
+                color: $darkColor
+            }
+        }
+    }
+}
+.navbar-light{
+    .navbar-toggler {
+        // background-color: $darkColor
+        border-color: #333;
+    }
+}
+/***** End Media *****/
+
+
+/***** Start Admin *****/
+
+/***** Start Dashboard *****/
+.main-title {
+    color: $darkFontColor;
+    text-shadow: 0 0 10px #EEE
+}
+.admin-title {
+    color: $darkFontColor;
+}
+.dash-card {
+    background-color: $darkColor;
+    box-shadow: 5px 5px 25px 2px #000;
+    .dash-card-title {
+        border-bottom: 2px solid #111;
+        color: $darkFontColor;
+        text-shadow: 0 0 10px #EEE;
+        .fa {
+            color: rgba(255, 153, 0, 0.426);
+        }
+    }
+    .dash-card-body {
+        .value {
+            color: $darkFontColor;
+        }
+    }
+}
+/***** End Dashboard *****/
+
+/***** End Admin *****/

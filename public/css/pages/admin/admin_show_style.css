@@ -1,0 +1,11 @@
+.btn-custom { font-size: 20px; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+
+.card { background-color: #2b2b2b; border: none; }
+.card .card-body { background-color: #2b2b2b; }
+.card .card-body .card-title { color: rgba(238, 238, 238, 0.85); font-weight: bold; font-size: 23px; letter-spacing: 1.2px; text-shadow: 0 0 10px #EEE; }
+.card .card-body .card-text { color: rgba(238, 238, 238, 0.707) !important; }
+
+.code h5 { color: #FFF; font-weight: bold; }
+.code .code_container { background-color: rgba(0, 0, 0, 0.748); color: #acacac; border-radius: 10px; padding: 20px; text-shadow: 3px 3px 5px #acacac; height: 400px; }
+
+/*# sourceMappingURL=admin_show_style.css.map */

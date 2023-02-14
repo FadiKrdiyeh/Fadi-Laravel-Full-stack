@@ -1,0 +1,9 @@
+.theme-title { font-size: 45px; color: #acacac; margin-bottom: 100px; }
+
+.theme-box { width: 100px; height: 100px; cursor: pointer; border-radius: 20px; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+.theme-box:not(.active):hover { transform: scale(1.05); }
+
+.active { transform: scale(1.07); }
+.active::after { content: '\f00c'; font-family: FontAwesome; display: flex; justify-content: center; align-items: center; position: absolute; bottom: 3px; right: 3px; border-radius: 50%; width: 20px; height: 20px; }
+
+/*# sourceMappingURL=themes.css.map */

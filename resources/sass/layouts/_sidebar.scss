@@ -1,0 +1,62 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+.offcanvas {
+    // background-color: $darkColor;
+    overflow-x: hidden;
+    .offcanvas-header {
+        .offcanvas-title{
+            // color: #DDD;
+            padding-left: 4rem;
+            // text-shadow: 0 0 10px #EEE;
+            font-size: 34px;
+        }
+        .btn-close {
+            // color: #DDD !important;
+            font-size: 30px;
+        }
+    }
+    .offcanvas-body {
+        overflow-x: hidden;
+        padding: 1rem 0 1rem 3rem;
+        .nav-link {
+            // color: $lightColor;
+            padding-left: 4rem;
+            width: 100%;
+            @include transition(.5s);
+            i {
+                font-size: 25px;
+                margin-right: 20px;
+                // color: #DDD;
+            }
+            &:hover {
+                // background-color: $lightColor;
+                // color: $darkColor;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                transform: scale(1.06);
+            }
+        }
+    }
+}
+.btn-sitting {
+    // background-color: $lightColor;
+    position: fixed;
+    width: 50px;
+    height: 60px;
+    // border: 2px solid #999;
+    font-size: 25px;
+    z-index: 20;
+}
+.btn-sitting-ar {
+    top: 200px;
+    right: 0;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.btn-sitting-en {
+    top: 200px;
+    left: 0;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}

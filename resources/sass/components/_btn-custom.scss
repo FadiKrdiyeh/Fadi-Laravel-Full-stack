@@ -1,0 +1,16 @@
+@import '../helpers/variables';
+
+.btn-custom {
+    // background-color: #444;
+    // color: #DDD;
+    font-size: 20px;
+    @include transition(.3s);
+    // &:hover {
+    //     background-color: $lightColor;
+    //     color: #111;
+    // }
+    // &:focus {
+    //     box-shadow: 5px 5px 10px 1px $lightColor;
+    //     color: $lightColor;
+    // }
+}

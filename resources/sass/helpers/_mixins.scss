@@ -1,0 +1,10 @@
+@mixin transition ($speed) {
+    -webkit-transition: all $speed ease-in-out;
+    -moz-transition: all $speed ease-in-out;
+    -ms-transition: all $speed ease-in-out;
+    -o-transition: all $speed ease-in-out;
+    transition: all $speed ease-in-out;
+}
+@mixin shadow($color) {
+    text-shadow: 0 0 10px $color;
+}

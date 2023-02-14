@@ -1,0 +1,39 @@
+@import '../../../helpers/variables';
+@import '../../../helpers/mixins';
+@import '../../../components/btn-custom';
+
+.card {
+    background-color: $darkColor;
+    border-color: #444;
+    border: none;
+    .card-header {
+        color: $darkFontColor;
+        border: none;
+        font-size: 46px;
+        text-shadow: 0 0 10px #EEE
+    }
+    .card-body {
+        background-color: $darkColor;
+        .form-text {
+            color: $darkFontColor;
+            font-size: 20px;
+        }
+        .form-control {
+            background-color: $darkColor;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 2px solid $darkFontColor;
+            color: $lightColor;
+            @include transition(.5s);
+            &::placeholder {
+                color: rgba(238, 238, 238, 0.364);
+            }
+            &:focus {
+                box-shadow: 5px 5px 10px 1px $lightColor;
+                background-color: #444;
+                color: $lightColor;
+            }
+        }
+    }
+}

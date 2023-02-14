@@ -1,0 +1,31 @@
+.rate-container { position: relative; display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: #2b2b2b; }
+.rate-container h2 { margin-bottom: 10px; font-weight: 500; color: #ffae00; }
+.rate-container .skills { -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+.rate-container .skills .rating h3 { min-width: 50px; padding-right: 20px; font-size: 20px; font-weight: 400; letter-spacing: 2px; }
+.rate-container .skills .rating { position: relative; display: flex; margin: 5px 0; max-width: 50vh; }
+.rate-container .skills .rating input { position: relative; width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; cursor: pointer; -webkit-appearance: none; appearance: none; overflow: hidden; }
+.rate-container .skills .rating input::before { content: '\f005'; position: absolute; font-family: fontAwesome; font-size: 34px; left: 17px; color: #030B0F; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+.rate-container .skills .rating-ar { flex-direction: row; }
+.rate-container .skills .rating-en { flex-direction: row-reverse; }
+
+.rate-container .skills .rating input:nth-child(2n+1)::before { right: 17px; left: initial; }
+
+.rate-container .skills .rating input:hover ~ input::before, .rate-container .skills .rating input:hover::before, .rate-container .skills .rating input:checked ~ input::before, .rate-container .skills .rating input:checked::before { /* color: #1F9CFF; */ color: #ffae00; }
+
+/****** End Rating Stars ******/
+.btn-custom { font-size: 20px; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+
+body { margin-bottom: 100px; }
+
+.main-title { font-size: 46px; font-weight: bold; letter-spacing: 1.9px; }
+
+.admin-title { margin-bottom: 50px; }
+
+.dash-card { border-radius: 20px; }
+.dash-card .dash-card-title { padding: 15px; font-size: 28px; font-weight: bold; letter-spacing: 1.9px; }
+.dash-card .dash-card-title .fa { display: block; font-size: 50px; text-shadow: none; margin-top: 10px; }
+.dash-card .dash-card-body { display: flex; justify-content: center; align-items: center; padding: 20px; }
+.dash-card .dash-card-body .value { font-size: 35px; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+.dash-card .dash-card-body .value:hover { transform: rotate(360deg) scale(1.06); }
+
+/*# sourceMappingURL=admin_dashboard.css.map */

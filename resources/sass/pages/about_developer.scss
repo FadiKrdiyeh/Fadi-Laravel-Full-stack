@@ -1,0 +1,154 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+@import '../components/btn-custom';
+
+.about-title {
+    margin-bottom: 50px;
+    color: $darkFontColor;
+    // text-shadow: 0 0 10px #EEE;
+    font-size: 50px;
+    font-weight:bold
+}
+.image {
+    width: 100% !important;
+}
+.info-text {
+    // color: $darkFontColor;
+    .name {
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        // color: #EEE;
+    }
+    .list-title {
+        font-size: 23px;
+        font-weight: 400;
+        margin: 30px auto 10px auto;
+    }
+    .info-list {
+        // color: rgba(238, 238, 238, 0.501);
+        .fa {
+            // color: rgba(209, 143, 0, 0.693);
+            margin-right: 10px;
+        }
+    }
+}
+.contact-me {
+    box-sizing: border-box;
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background: linear-gradient(to bottom, $darkColor, #DFF1FF);
+    overflow: hidden;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        bottom: 0;
+        // background: rgba(255, 255, 255, 0.1);
+        z-index: 10;
+        // border-top: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(10px);
+    }
+    .contact-title {
+        position: absolute;
+        top: 0px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        // color: $darkFontColor;
+        // text-shadow: 0 0 10px #EEE;
+        font-size: 50px;
+        font-weight:bold;
+        z-index: 11;
+    }
+    .color {
+        position: absolute;
+        filter: blur(150px);
+        &:nth-child(1) {
+            top: -350px;
+            // background-color: #FF359B;
+            width: 600px;
+            height: 600px;
+        }
+        &:nth-child(2) {
+            bottom: -150px;
+            left: 100px;
+            // background-color: #FFFD87;
+            width: 500px;
+            height: 500px;
+        }
+        &:nth-child(3) {
+            bottom: -50px;
+            right: 0;
+            // background-color: #00D2FF;
+            width: 300px;
+            height: 300px;
+        }
+    }
+    .contact-list {
+        position: relative;
+        display: flex;
+        li {
+            position: relative;
+            list-style: none;
+            margin: 10px;
+            a {
+                position: relative;
+                top: 0;
+                width: 80px;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // color: #FFF;
+                font-size: 2em;
+                // border: 1px solid rgba(255, 255, 255, 0.4);
+                // border-right: 1px solid rgba(255, 255, 255, 0.2);
+                // border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                border-radius: 10px;
+                // background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(4px);
+                z-index: 1;
+                // box-shadow: 0 5 px 45px rgba(0, 0, 0, 0.1);
+                text-decoration: none;
+                overflow: hidden;
+                transition: top 0.5s, z-index 0s, transform 0.5s;
+                transition-delay: 0.5s, 0.5s, 0s;
+                &:hover {
+                    transition-delay: 0s, 0.5s, 0.5s;
+                    top: -30px;
+                    transform: translateY(50px);
+                    z-index: 11;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 50px;
+                    height: 100%;
+                    // background: rgba(255, 255, 255, 0.5);
+                    transform: skewX(45deg) translateX(150px);
+                    transition: 0.5s;
+                }
+                &:hover::before {
+                    transform: skewX(45deg) translateX(-150px);
+                }
+            }
+        }
+    }
+    .view-content {
+        position: absolute;
+        font-size: 35px;
+        margin-bottom: 20vh;
+        bottom: 0;
+        // display: none;
+        z-index: 11;
+    }
+}

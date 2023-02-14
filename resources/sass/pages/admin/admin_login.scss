@@ -1,0 +1,64 @@
+@import '../../helpers/variables';
+@import '../../helpers/mixins';
+@import '../../components/btn-custom';
+
+.card {
+    background-color: $darkColor;
+    border-color: #444;
+    border: none;
+    .card-header {
+        color: $darkFontColor;
+        border: none;
+        font-size: 46px;
+        text-shadow: 0 0 10px #EEE
+    }
+    .card-body {
+        background-color: $darkColor;
+        .card-title {
+            color: $darkFontColor;
+            font-weight: bold;
+            font-size: 23px;
+            letter-spacing: 1.2px;
+        }
+        .form-text {
+            color: $darkFontColor;
+            font-size: 20px;
+            &:last-child {
+                margin-top: 0;
+                margin-left: 10px;
+            }
+        }
+        .form-control {
+            background-color: $darkColor;
+            margin-bottom: 20px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 2px solid $darkFontColor;
+            color: $lightColor;
+            @include transition(.5s);
+            &::placeholder {
+                color: rgba(238, 238, 238, 0.364);
+            }
+            &:focus {
+                box-shadow: 5px 5px 10px 1px $lightColor;
+                background-color: #444;
+                color: $lightColor;
+            }
+        }
+        .form-check-input {
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(196, 196, 196, 0.816);
+            @include transition(.3s);
+            &:focus {
+                box-shadow: none;
+            }
+            &:checked {
+                box-shadow: 0 0 10px 1px $lightColor;
+                background-color: $darkColor;
+                border-color: #444;
+            }
+        }
+    }
+}

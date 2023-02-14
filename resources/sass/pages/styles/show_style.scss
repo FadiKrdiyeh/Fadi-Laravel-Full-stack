@@ -1,0 +1,64 @@
+@import '../../helpers/variables';
+@import '../../components/rate';
+@import '../../components/btn-custom';
+
+.card {
+    // background-color: $darkColor;
+    border: none;
+    .card-body {
+        // background-color: $darkColor;
+        .card-title {
+            // color: rgba(238, 238, 238, 0.85);
+            font-weight: bold;
+            font-size: 23px;
+            letter-spacing: 1.2px;
+            // text-shadow: 0 0 10px #EEE
+        }
+        // .card-text {
+        //     color: rgba(238, 238, 238, 0.707) !important;
+        // }
+    }
+    .modal {
+        .modal-dialog {
+            .modal-content {
+                // background-color: $darkColor;
+                .modal-header {
+                    // border-color: $lightColor;
+                    // .modal-title {
+                    //     color: #FFF;
+                    // }
+                    .close {
+                        // color: #FFF;
+                        font-size: 27px;
+                    }
+                }
+                // .modal-body {
+                //     .rate-container {
+                //         .total-ratings {
+                //             color: rgb(255, 174, 0);
+                //         }
+                //         .skills {
+                //             .name {
+                //                 color: $lightColor;
+                //             }
+                //         }
+                //     }
+                // }
+            }
+        }
+    }
+}
+.code {
+    h5 {
+        // color: #FFF;
+        font-weight: bold;
+    }
+    .code_container {
+        // background-color: rgba(0, 0, 0, 0.748);
+        // color: $lightColor;
+        border-radius: 10px;
+        padding: 20px;
+        // text-shadow: 3px 3px 5px $lightColor;
+        height: 400px;
+    }
+}

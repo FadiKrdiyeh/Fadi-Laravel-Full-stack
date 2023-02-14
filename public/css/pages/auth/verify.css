@@ -1,0 +1,7 @@
+.btn-custom { font-size: 20px; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+
+.card { background-color: #2b2b2b; border-color: #444; border: none; }
+.card .card-header { color: rgba(238, 238, 238, 0.85); border: none; font-size: 46px; text-shadow: 0 0 10px #EEE; }
+.card .card-body { background-color: #2b2b2b; color: rgba(238, 238, 238, 0.85); font-size: 20px; }
+
+/*# sourceMappingURL=verify.css.map */

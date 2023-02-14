@@ -1,0 +1,27 @@
+.rate-container { position: relative; display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: #2b2b2b; }
+.rate-container h2 { margin-bottom: 10px; font-weight: 500; color: #ffae00; }
+.rate-container .skills { -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+.rate-container .skills .rating h3 { min-width: 50px; padding-right: 20px; font-size: 20px; font-weight: 400; letter-spacing: 2px; }
+.rate-container .skills .rating { position: relative; display: flex; margin: 5px 0; max-width: 50vh; }
+.rate-container .skills .rating input { position: relative; width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; cursor: pointer; -webkit-appearance: none; appearance: none; overflow: hidden; }
+.rate-container .skills .rating input::before { content: '\f005'; position: absolute; font-family: fontAwesome; font-size: 34px; left: 17px; color: #030B0F; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+.rate-container .skills .rating-ar { flex-direction: row; }
+.rate-container .skills .rating-en { flex-direction: row-reverse; }
+
+.rate-container .skills .rating input:nth-child(2n+1)::before { right: 17px; left: initial; }
+
+.rate-container .skills .rating input:hover ~ input::before, .rate-container .skills .rating input:hover::before, .rate-container .skills .rating input:checked ~ input::before, .rate-container .skills .rating input:checked::before { /* color: #1F9CFF; */ color: #ffae00; }
+
+/****** End Rating Stars ******/
+.btn-custom { font-size: 20px; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+
+.card { border: none; }
+.card .card-header { border: none; font-size: 46px; }
+.card .card-body .card-title { font-weight: bold; font-size: 23px; letter-spacing: 1.2px; }
+.card .card-body .form-text { font-size: 20px; }
+.card .card-body .form-text:last-child { margin-top: 0; margin-left: 10px; }
+.card .card-body .form-control { border-top: none; border-left: none; border-right: none; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+.card .card-body .form-check-input { width: 20px; height: 20px; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.card .card-body .form-check-input:focus { box-shadow: none; }
+
+/*# sourceMappingURL=create_style.css.map */

@@ -1,0 +1,20 @@
+@import '../../helpers/variables';
+@import '../../helpers/mixins';
+@import '../../components/btn-custom';
+
+.card {
+    background-color: $darkColor;
+    border-color: #444;
+    border: none;
+    .card-header {
+        color: $darkFontColor;
+        border: none;
+        font-size: 46px;
+        text-shadow: 0 0 10px #EEE
+    }
+    .card-body {
+        background-color: $darkColor;
+        color: $darkFontColor;
+        font-size: 20px;
+    }
+}

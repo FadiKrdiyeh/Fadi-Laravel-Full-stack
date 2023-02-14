@@ -1,0 +1,9 @@
+.btn-custom { font-size: 20px; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+
+.wallet-title { font-size: 47px; margin-bottom: 50px; }
+
+.title { font-size: 30px; margin-bottom: 30px; }
+
+.btn-custom { width: 200px; }
+
+/*# sourceMappingURL=wallet.css.map */

@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'Dashboard' => 'الصفحة الرئيسية',
+    'You are logged in ' => 'لقد قمت بتسجيل دخولك ',
+    'Language' => 'اللغة',
+    'Search For Styles...' => 'ابحث عن تنسيقات...',
+    'Buy 0.99$' => 'شراء 0.99$',
+    'Free' => 'مجاناً',
+    'Total Rates:' => 'إجمالي التقييمات:',
+    'Rate' => 'تقييم',
+    'Details:' => 'التفاصيل:',
+    'Title:' => 'العنوان:',
+    'Description:' => 'الوصف:',
+    'Read More...' => 'فراءة المزيد...',
+    'Posted By You' => 'تم النشر بواستطك',
+    'Posted By Admin' => 'تم النشر بواسطة المدير',
+    ' Bought This Style' => ' اشتروا هذا التنسيق',
+    'Posted At:' => 'تم النشر في:',
+    'Rate This Style' => 'قيم هذا التنسيق',
+    'Your Rate:' => 'تقييمك:',
+    'Not Rated Yet!!' => 'لم تقيم هذا التنسيق بعد!!',
+    "Can't Show style code until pay..." => "لا يمكن عرض الكود الخاص بهذا التنسيق حتى يتم الدفع...",
+    'Total Results: ' => 'عدد النتائج: ',
+];
